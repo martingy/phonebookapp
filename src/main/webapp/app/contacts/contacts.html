@@ -1,0 +1,27 @@
+<div ng-cloak>
+    <div class="row" infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="vm.page * PAGE_SIZE >= vm.totalItems">
+        <div class="col-md-3" ng-repeat="contact in vm.contacts track by contact.id">
+            <div class="panel panel-primary" >
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <img name="picture" id="field_picture"
+                                 ng-src="{{contact.picture ? 'data:image/JPEG;base64,' + contact.picture : 'content/images/icon-ios7-contact-128.png'}}"
+                                 class="center-block icon-on-card">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <h3>{{contact.name}}</h3>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <h4>{{contact.phoneNumber}}</h4>
+                        </div>
+                    </div>
+                    <a href="tel:{{ contact.phoneNumber }}" class="btn btn-block btn-info">
+                        <i class="material-icons">local_phone</i>
+                        <span class="hidden-xs hidden-sm"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

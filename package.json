@@ -1,0 +1,31 @@
+{
+  "name": "phonebookApp",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "cacheDirectories": [
+    "node_modules",
+    "src/main/webapp/bower_components"
+  ],
+  "devDependencies": {
+    "bower": "1.7.9",
+    "local-web-server": "2.2.2",
+    "jasmine-core": "2.5.0",
+    "karma": "1.2.0",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-coverage": "1.1.1",
+    "karma-jasmine": "1.0.2",
+    "karma-junit-reporter": "1.1.0"
+  },
+  "engines": {
+    "node": ">=7.6"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "update-deps": "npm update",
+    "postupdate-deps": "bower update",
+    "prestart": "npm install",
+    "start": "ws",
+    "pretest": "npm install"
+  }
+}

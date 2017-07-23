@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>phonebookApp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
+    <link rel="stylesheet" href="content/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body ng-app="phonebookApp" ng-strict-di>
+    <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <page-ribbon></page-ribbon>
+    <div ui-view="navbar" ng-cloak></div>
+    <div class="container top-padded">
+        <div ui-view="content">
+            <!-- Angular views -->
+        </div>
+
+        <div class="footer" ng-cloak>
+
+        </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
+    <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/util/state.handler.js"></script>
+    <script src="app/util/search.service.js"></script>
+    <script src="app/navbar/navbar.controller.js"></script>
+    <script src="app/contacts/contacts.state.js"></script>
+    <script src="app/contacts/contacts.service.js"></script>
+    <script src="app/contacts/contacts.controller.js"></script>
+    <script src="app/config/uib-pagination.config.js"></script>
+    <script src="app/config/uib-pager.config.js"></script>
+    <script src="app/config/http.config.js"></script>
+    <script src="app/config/compile.config.js"></script>
+    <script src="app/config/bootstrap-material.config.js"></script>
+    <script src="app/app.state.js"></script>
+    <script src="app/app.constants.js"></script>
+
+</body>
+</html>

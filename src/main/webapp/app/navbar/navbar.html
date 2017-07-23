@@ -1,0 +1,20 @@
+<nav class="navbar navbar-fixed-top navbar-default header-inner clearfix" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="navbar-brand logo" href="#/" >
+                    <img class="logo-img" src="content/images/contact.png"/>
+                    <span>PhonebookApp</span>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <form class="navbar-form">
+                    <div class="form-group max-width">
+                        <input type="text" class="form-control max-width" placeholder="Search" ng-model="vm.Search.q"
+                               ng-model-options="{ debounce: 500 }">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>

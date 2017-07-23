@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:h2:mem:phonebookapp;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        username: phonebookapp
+        password:
+    h2:
+        console:
+            enabled: false
+
+    application.name: PhonebookApp
+
+server.port: 8080
