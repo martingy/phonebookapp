@@ -4,9 +4,9 @@ This is a simple phone book application with search capabilities.
 
 ## Technologies
 
-    - Backend: Java 8, Spring Boot, Spring MVC, Spring Data
-    - Frontend: AngularJs, Bootstrap, Javascript, HTML5, CSS3
-    - Storage: embedded, inmemory H2 database (packaged in the backend)
+- Backend: Java 8, Spring Boot, Spring MVC, Spring Data
+- Frontend: AngularJs, Bootstrap, Javascript, HTML5, CSS3
+- Storage: embedded, inmemory H2 database (packaged in the backend)
     
 ## Workflow
 
