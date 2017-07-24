@@ -18,6 +18,7 @@ Before you can build this project, you must install and configure the following 
 
 1. [Node.js][]: Node is for running a development web server and building the project. At least version 7.6 is needed.
 2. [JDK][]: The Java SDK. At least version 1.8 is needed.
+3. [Git][]: Git client.
 
 After installing Node, you should be able to run the following command to install development tools, though npm start will run npm install as well:
 
@@ -59,3 +60,4 @@ To launch the application's tests, run:
 [Node.js]: https://nodejs.org/
 [JDK]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [Bower]: http://bower.io/
+[Git]: https://git-scm.com/downloads
