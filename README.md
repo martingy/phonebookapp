@@ -26,7 +26,14 @@ After installing Node, you should be able to run the following command to instal
 
 Run the following commands in two separate terminals to run the application:
 
+On Linux:
+
     ./mvnw
+    npm start
+
+On Windows:
+
+    mvnw
     npm start
 
 [Bower][] is used to manage CSS and JavaScript dependencies used in this application.
@@ -38,7 +45,13 @@ After running the two commands, according to the current configuration, the fron
 
 Run the following command to package the application in a runnable war file:
 
+On Linux:
+
     ./mvnw -Pwar clean package
+    
+On Windows:
+
+    mvnw -Pwar clean package
 
 Run the following command to run the the application:
 
@@ -50,11 +63,23 @@ i.e.:
 
 Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
 
+
+## Troubleshooting
+
+In case of npm or bower error, please delete the folders '/node_modules' and '/src/main/webapp/bower_components' and try to run the command which failed again.
+
+
 ## Testing
 
 To launch the application's tests, run:
 
+On Linux:
+
     ./mvnw clean test
+
+On Windows:
+
+    mvnw clean test
 
 
 [Node.js]: https://nodejs.org/
